@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Autocorrect</title>
+  <link rel="stylesheet" href="/css/main.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.2/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <script type="module" >
+      import {eventOnchange, displayWords} from '/js/main.js';
+      eventOnchange('text-content')
+      displayWords('correct-words')
+    </script>
+    <div>
+      <h1>Hello underworld</h1>
+      <h4>The correct one : <span id="correct-words"></span></h4>
+      <textarea 
+        name="content" 
+        id="text-content" 
+        cols="50" 
+        rows="6"
+        class="content-box"
+        >
+      </textarea>
+    </div>
+</body>
+</html>

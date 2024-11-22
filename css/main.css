@@ -1,0 +1,46 @@
+body {
+  padding: 0;
+  margin-left: 10px;
+}
+
+:root {
+  --yellow : #ffc107
+  --background-color:#f8f7fa;
+  --main-color :rgb(255, 255, 255);
+  --text-color : #525252;
+}
+
+.dark-mode {
+  --main-color :#404358;
+  --background-color:#2f3349; 
+  --text-color : #d6d6d6;
+}
+
+.container-word {
+  width: fit-content;
+  padding: 3px 7px 3px 7px;
+}
+
+.uderline-correction {
+  margin-bottom: 2px;
+  border-bottom: 2px solid var(--yellow);
+}
+
+.content-box {
+  width: 50%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s ease;
+}
+
+.content-box:focus {
+  border-color: #5b9bd5; /* Blue focus border */
+  outline: none;
+}
+
+textarea::placeholder {
+  color: #888;
+  font-style: italic;
+}
